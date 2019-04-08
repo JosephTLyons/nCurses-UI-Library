@@ -63,8 +63,7 @@ std::string Window::get_centered_text (const std::string& text)
 //--------------------------------------------------------------------------------------------------
 Window::Window (const unsigned int& x, const unsigned int& y,
                 const unsigned int& width, const unsigned int& height,
-                const std::string& window_title, const bool& display_title,
-                const bool& is_center_print_window_input)
+                const std::string& window_title, const bool& is_center_print_window_input)
     : is_center_print_window (is_center_print_window_input)
 {
     // Create inner invisible window for the text
@@ -72,7 +71,9 @@ Window::Window (const unsigned int& x, const unsigned int& y,
     // If a window title is wanted, we need to adjust the inner text window down a line to allow
     // for it, if we don't want a title, go ahead and use the space where the title would be as
     // printable space for the text window
-    if (display_title)
+    const bool has_window_title = window_title.length() > 0;
+
+    if (has_window_title)
         ncurse_text_ptr = newwin (height - 3, width - 2, y + 2, x + 1);
 
     else
@@ -85,7 +86,7 @@ Window::Window (const unsigned int& x, const unsigned int& y,
     box (ncurse_border_ptr, 0, 0);
 
     // Print centered window title if requested
-    if (display_title)
+    if (has_window_title)
         mvwprintw (ncurse_border_ptr, 1, 1, get_centered_text (window_title).c_str());
 
     wrefresh (ncurse_border_ptr);

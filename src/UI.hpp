@@ -31,7 +31,7 @@ public:
 
     void make_new_window (const unsigned int& x, const unsigned int& y,
                           const unsigned int& width, const unsigned int& height,
-                          const std::string& window_title, const bool& display_title,
+                          const std::string& window_title,
                           const bool& is_center_print_window);
 
     char live_input (const unsigned int& window_number, const bool& newline);

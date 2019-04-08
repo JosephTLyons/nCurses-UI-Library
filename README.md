@@ -26,7 +26,7 @@ This example shows how simple it is to make a titled window with centered text.
 int main()
 {
     UI ui;
-    ui.make_new_window (1, 1, 30, 20, "Main Window", true, true);
+    ui.make_new_window (1, 1, 30, 20, "Main Window", true);
     ui.write_to_window (0, "Hello World!", false);
     getch();
 }
@@ -43,7 +43,7 @@ into the `make_new_window()` function and the window will not display a title
 
 ```C++
 ...
-ui.make_new_window (1, 1, 30, 20, "", false, true);
+ui.make_new_window (1, 1, 30, 20, "", true);
 ...
 
 ```
@@ -74,9 +74,9 @@ int main()
 
     // Make windows
     // Note: window creation is a dynamic procedure
-    ui.make_new_window (x + (0 * (x_window_distance + width)), y, width, height, "Left Window", true, false);
-    ui.make_new_window (x + (1 * (x_window_distance + width)), y, width, height, "Middle Window", true, false);
-    ui.make_new_window (x + (2 * (x_window_distance + width)), y, width, height, "Right Window", true, false);
+    ui.make_new_window (x + (0 * (x_window_distance + width)), y, width, height, "Left Window", false);
+    ui.make_new_window (x + (1 * (x_window_distance + width)), y, width, height, "Middle Window", false);
+    ui.make_new_window (x + (2 * (x_window_distance + width)), y, width, height, "Right Window", false);
 
     // Enumerations to make remembering a window easier
     enum windows
