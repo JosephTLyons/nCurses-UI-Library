@@ -17,6 +17,9 @@
 ## How to Use
 
 ### Small Example:
+
+This example shows how simple it is to make a window with centered text.
+
 ```C++
 #include "UI.hpp"
 
@@ -24,13 +27,18 @@ int main()
 {
     UI ui;
     ui.make_new_window (1, 1, 30, 20, "Main Window", true, true);
-    ui.write_to_window(0, "Hello World!", false);
+    ui.write_to_window (0, "Hello World!", false);
     getch();
 }
 
 ```
 
 ![Small Example](./Images/Small-Example.png)
+
+This example illustrates how to create multiple windows and how to allow for
+live input.  Using `const int`s makes it easy to keep all windows uniform and
+allows for quickly changing all windows at once.  Using an `enum` makes
+remembering which window is which simple.
 
 ### Large Example:
 
