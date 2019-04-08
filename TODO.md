@@ -1,9 +1,7 @@
 #  TODO
 
-## GitHub
-- Upload to Github and Ignore main
-    - Have a simple quick one window example
-    - The current one is the example of a more complex example
+- Add to the README to show other features
+
 
 - Error with center print windows and live input
 - Use main as an example program, so make it look nice
