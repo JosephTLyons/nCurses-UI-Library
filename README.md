@@ -23,7 +23,7 @@
 int main()
 {
     UI ui;
-    ui.make_new_window (1, 1, 30, 20, "Main", true, true);
+    ui.make_new_window (1, 1, 30, 20, "Main Window", true, true);
     ui.write_to_window(0, "Hello World!", false);
     getch();
 }
