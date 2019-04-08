@@ -17,5 +17,6 @@
 - Have the live_input ignore non-printables and return (int) char = 0
 - Implement a window history and be able to scroll up and down with it one line at a time via function calls
 - Checks if window title is too long for window's witdth
+- Ways to Hide the dependency code or organize it out of view?
 
 - How to compile code and just ship spec files.  Is this legal with ncurses?
