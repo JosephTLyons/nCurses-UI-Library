@@ -16,9 +16,9 @@
 
 ## How to Use
 
-### Small Example:
+### Small Example: Titled Window:
 
-This example shows how simple it is to make a window with centered text.
+This example shows how simple it is to make a titled window with centered text.
 
 ```C++
 #include "UI.hpp"
@@ -33,11 +33,26 @@ int main()
 
 ```
 
-![Small Example](./Images/Small-Example.png)
+![Small Example](./Images/Small-Example-Titled.png)
 
-This example illustrates how to create multiple windows and how to allow for
-live input.  Using `const int`s makes it easy to keep all windows uniform and
-allows for quickly changing all windows at once.  Using an `enum` makes
+### Small Example: Non-Titled Window:
+
+Of course, our windows do not have to have titles at all.  We can omit them and
+use the extra line as printable space.  All we have to do pass an empty string
+into the `make_new_window()` function and the window will not display a title
+
+```C++
+...
+ui.make_new_window (1, 1, 30, 20, "", false, true);
+...
+
+```
+
+![Small Example](./Images/Small-Example-Non-Titled.png)
+
+This example illustrates how to create multiple titled windows and how to allow
+for live input.  Using `const int`s makes it easy to keep all windows uniform
+and allows for quickly changing all windows at once.  Using an `enum` makes
 remembering which window is which simple.
 
 ### Large Example:
