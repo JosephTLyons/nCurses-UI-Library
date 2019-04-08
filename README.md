@@ -1,11 +1,18 @@
 #  nCurses UI Library
 
 ## Description
-    -
+-
 
 ## Background
-    - Where this came from
-    - Why files are separated how they are
+- Where this came from
+- Why files are separated how they are
+...
+
+## UI Methods Explained
+-
+-
+-
+...
 
 ## How to Use
 
@@ -64,7 +71,6 @@ int main()
     while (ui.live_input (middle, false) != input_break);
     while (ui.live_input (right,  false) != input_break);
 }
-
 ```
 
 ![Large Example](./Images/Large-Example.png)
