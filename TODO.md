@@ -24,4 +24,8 @@
 
 - Functionality entirely listed in README.md
 
+- Make public
+
+- Organize this file
+
 - How to compile code and just ship spec files.  Is this legal with ncurses?
