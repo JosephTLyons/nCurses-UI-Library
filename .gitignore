@@ -1,0 +1,5 @@
+# Ignore all files used to test this library
+main.cpp
+makefile
+*.o
+nCurses_UI_Library
