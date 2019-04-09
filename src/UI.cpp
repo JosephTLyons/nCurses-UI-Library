@@ -176,6 +176,14 @@ void UI::clear_all_windows()
 }
 
 //--------------------------------------------------------------------------------------------------
+// Public: returns the height number of windows that the UI is managing.
+//--------------------------------------------------------------------------------------------------
+unsigned long int UI::get_number_of_windows()
+{
+    return window_vector.size();
+}
+
+//--------------------------------------------------------------------------------------------------
 // Public: returns the width (columns) of the internal window specified.  It returns -1 if the user
 //         didn't specify a window that is valid.
 //--------------------------------------------------------------------------------------------------

@@ -54,6 +54,8 @@ public:
     void clear_window (const unsigned int& window_number);
     void clear_all_windows();
 
+    unsigned long int get_number_of_windows();
+
     unsigned int get_window_width (const unsigned int& window_number);
     unsigned int get_window_height (const unsigned int& window_number);
 };
