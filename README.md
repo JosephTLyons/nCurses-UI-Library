@@ -99,3 +99,37 @@ int main()
 ```
 
 ![Large Example](./Images/Large-Example.png)
+
+An example makefile for the previous examples
+
+```makefile
+BIN_NAME = nCurses_UI_Library_Test
+LIBRARIES = -lncurses
+OBJECT_FILES = main.o UI.o Window.o Write.o
+CXXFLAGS = -std=c++17
+
+$(BIN_NAME): $(OBJECT_FILES)
+	g++ -o $(BIN_NAME) $(OBJECT_FILES) $(LIBRARIES)
+
+main.o: main.cpp
+	g++ $(CXXFLAGS) -c main.cpp
+
+UI.o: UI.cpp UI.hpp Window.hpp
+	g++ $(CXXFLAGS) -c UI.cpp
+
+Window.o: Window.cpp Window.hpp Write.hpp
+	g++ $(CXXFLAGS) -c Window.cpp
+
+Write.o: Write.cpp Write.hpp
+	g++ $(CXXFLAGS) -c Write.cpp
+
+clean:
+	rm -rf *.o
+	rm -rf *.out
+	rm -rf *~
+	rm $(BIN_NAME)
+
+run:
+	./$(BIN_NAME)
+
+```
