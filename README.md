@@ -75,7 +75,7 @@ int main()
     // Make windows
     // Note: window creation is a dynamic procedure
     ui.make_new_window (x + (0 * (x_window_distance + width)), y, width, height, "Left Window", false);
-    ui.make_new_window (x + (1 * (x_window_distance + width)), y, width, height, "Middle Window", false);
+    ui.make_new_window (x + (1 * (x_window_distance + width)), y, width, height, "Middle Window", true);
     ui.make_new_window (x + (2 * (x_window_distance + width)), y, width, height, "Right Window", false);
 
     // Enumerations to make remembering a window easier
@@ -85,6 +85,8 @@ int main()
         middle,
         right,
     };
+
+    ui.write_to_all_windows (std::to_string(ui.get_number_of_windows()), true);
 
     // Random character used to break input loops
     const char input_break = '[';
