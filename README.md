@@ -1,7 +1,10 @@
 #  nCurses UI Library
 
 ## Description
--
+- This UI library aims to make it easy to construct and use windows within the
+  command line.  The library uses ncurses under the hood, so that must be
+  installed on your system.  This library was only tested on a macOS machine;
+  there is no guarantee runs correctly, or even at all, on any other machines.
 
 ## Background
 - Where this came from
