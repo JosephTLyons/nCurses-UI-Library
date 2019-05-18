@@ -9,7 +9,7 @@
   that this class is dynamic
 - Implement a backspace function in the window, other key movement functionality
   such as arrow keys
-- Put a C++ mutex in the UI for future compatiblity with multithreaded
+- Put a C++ mutex in the UI for future compatibility with multithreaded
   applications
     - Marketing will be "A thread-safe UI library built with ncurses"
 - Update all documentation to pay tribute to where this came from, but
@@ -18,7 +18,7 @@
 - Have the live_input ignore non-printables and return (int) char = 0
 - Implement a window history and be able to scroll up and down with it one line
   at a time via function calls
-- Checks if window title is too long for window's witdth
+- Checks if window title is too long for window's width
 - Ways to Hide the dependency code or organize it out of view?
 - Error if window title is too long
 - Error if centered text is too long?
