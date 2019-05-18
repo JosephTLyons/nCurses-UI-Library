@@ -107,6 +107,8 @@ Window::~Window()
 char Window::live_input (const bool& newline)
 {
     char input = wgetch (ncurse_text_ptr);
+    
+    flushinp(); // Does this need to be here for this library?
 
     write (input, newline);
 

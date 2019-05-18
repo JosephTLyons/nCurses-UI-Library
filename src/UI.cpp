@@ -61,8 +61,7 @@ UI::~UI()
 //--------------------------------------------------------------------------------------------------
 void UI::make_new_window (const unsigned int& x, const unsigned int& y,
                           const unsigned int& width, const unsigned int& height,
-                          const std::string& window_title,
-                          const bool& is_center_print_window)
+                          const std::string& window_title, const bool& is_center_print_window)
 {
     new_window = new (std::nothrow) Window (x, y, width, height, window_title,
                                             is_center_print_window);
