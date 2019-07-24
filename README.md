@@ -89,7 +89,7 @@ int main()
         right,
     };
 
-    ui.write_to_all_windows (std::to_string(ui.get_number_of_windows()), true);
+    ui.write_to_all_windows (std::to_string (ui.get_number_of_windows()), true);
 
     // Random character used to break input loops
     const char input_break = '[';
