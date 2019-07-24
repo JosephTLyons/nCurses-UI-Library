@@ -56,6 +56,8 @@ public:
 
     unsigned int get_window_width (const unsigned int& window_number);
     unsigned int get_window_height (const unsigned int& window_number);
+
+    void pause_until_input();
 };
 
 #endif /* UI_hpp */

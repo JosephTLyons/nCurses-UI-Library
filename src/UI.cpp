@@ -208,3 +208,13 @@ unsigned int UI::get_window_height (const unsigned int& window_number)
 
     return -1;
 }
+
+//--------------------------------------------------------------------------------------------------
+// Public: This method simply uses the getch() method to "pause" the screen.  This method of
+//         pausing the screen is fairly typical when working with nCurses, so it is included in this
+//         libary as well.
+//--------------------------------------------------------------------------------------------------
+void UI::pause_until_input()
+{
+    getch();
+}
