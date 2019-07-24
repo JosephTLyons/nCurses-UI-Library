@@ -28,3 +28,4 @@
 - Make public
 - Organize this file
 - How to compile code and just ship spec files.  Is this legal with ncurses?
+- Unify all "ncurses" vs "nCurses" casing
