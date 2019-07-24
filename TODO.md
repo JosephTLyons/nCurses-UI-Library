@@ -1,7 +1,6 @@
 #  TODO
 
 - Add to the README to show other features
-
 - Error with center print windows and live input
 - Use main as an example program, so make it look nice
 - Include makefile sample
