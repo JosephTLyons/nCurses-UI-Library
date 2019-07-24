@@ -1,4 +1,4 @@
-#  nCurses UI Library
+# nCurses UI Library
 
 ## Description
 - This UI library aims to make it easy to construct and use windows within the
@@ -7,9 +7,12 @@
   there is no guarantee runs correctly, or even at all, on any other machines.
 
 ## Background
-- Where this came from
-- Why files are separated how they are
-...
+- This library was originally developed to manage the UI for a simulated
+  operating system developed by
+  [Shaun Whitfield](https://github.com/shaunwhitfield) and I for our Operating
+  Systems course.  Shaun and I split many of the tasks; I wrote this UI library
+  and felt it would be an interesting to use it outside of that project, so I've
+  placed it inside of its own repository.
 
 ## UI Methods Explained
 -
