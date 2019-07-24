@@ -28,4 +28,3 @@
 - Make public
 - Organize this file
 - How to compile code and just ship spec files.  Is this legal with ncurses?
-- Add a license to this repo
