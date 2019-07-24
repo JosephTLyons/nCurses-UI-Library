@@ -102,15 +102,18 @@ Window::~Window()
 //--------------------------------------------------------------------------------------------------
 // Public: Allows the user to write the screen via keyboard in real-time.  The char that is written
 //         is returned so that the calling function may use it for whatever it may need.
+// Note:   Live input does not currently support center-aligned text.  Please use left-aligned until
+//         this is implemented.  Currently, the application will terminate if you try to call
+//         live_input() on a center print window.  This will be removed if this feature is added in
+//         the future.
 //--------------------------------------------------------------------------------------------------
 char Window::live_input (const bool& newline)
 {
+    assert(! is_center_print_window);
+
     char input = wgetch (ncurse_text_ptr);
-
     flushinp(); // Does this need to be here for this library?
-
     write (input, newline);
-
     return input;
 }
 
