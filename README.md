@@ -134,5 +134,4 @@ clean:
 
 run:
 	./$(BIN_NAME)
-
 ```
