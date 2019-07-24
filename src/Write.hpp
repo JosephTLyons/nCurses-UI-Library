@@ -1,10 +1,9 @@
 //--------------------------------------------------------------------------------------------------
-// Project:     Ultima 2.0
+// Name:        nCurses UI Library
 // File:        Write.hpp
-// Description: An abstact base class used by both the Window class and the File_Out class
+// Description: An abstact base class used by Window class
 // Notes:
-// Authors:     Joseph Lyons, Shaun Whitfield
-// Class:       CSCI-C 435: Operating Systems (Spring 2019)
+// Author:      Joseph Lyons
 //--------------------------------------------------------------------------------------------------
 
 #ifndef Write_hpp

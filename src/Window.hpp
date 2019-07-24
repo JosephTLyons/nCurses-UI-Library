@@ -1,5 +1,5 @@
 //--------------------------------------------------------------------------------------------------
-// Project:     Ultima 2.0
+// Name:        nCurses UI Library
 // File:        Window.hpp
 // Description: A Window class that uses the power of nCurses to build windows, while purposely
 //              avoiding all of nCurses major downfalls.
@@ -12,8 +12,7 @@
 //              Window = an instance of this Window wrapper class
 //              WINDOW = an instance of an nCurses window
 //
-// Authors:     Joseph Lyons, Shaun Whitfield
-// Class:       CSCI-C 435: Operating Systems (Spring 2019)
+// Author:      Joseph Lyons
 //--------------------------------------------------------------------------------------------------
 
 #ifndef Window_hpp

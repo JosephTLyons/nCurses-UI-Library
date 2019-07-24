@@ -1,11 +1,10 @@
 //--------------------------------------------------------------------------------------------------
-// Project:     Ultima 2.0
+// Name:        nCurses UI Library
 // File:        UI.cpp
 // Description: A user interface class that dynamically creates Windows and offers the user a
 //              handful of Window functionality, such as writing and clearing.
 // Notes:
-// Authors:     Joseph Lyons, Shaun Whitfield
-// Class:       CSCI-C 435: Operating Systems (Spring 2019)
+// Author:      Joseph Lyons
 //--------------------------------------------------------------------------------------------------
 
 #include "UI.hpp"
