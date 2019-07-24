@@ -32,11 +32,10 @@ This example shows how simple it is to make a titled window with centered text.
 int main()
 {
     UI ui;
-    ui.make_new_window (1, 1, 30, 20, "Main Window", true);
+    ui.make_new_window (1, 1, 20, 10, "Main Window", true);
     ui.write_to_window (0, "Hello World!", false);
     ui.pause_until_input();
 }
-
 ```
 
 ![Small Example](./Images/Small-Example-Titled.png)
@@ -49,9 +48,8 @@ into the `make_new_window()` function and the window will not display a title
 
 ```C++
 ...
-ui.make_new_window (1, 1, 30, 20, "", true);
+ui.make_new_window (1, 1, 20, 10, "", true);
 ...
-
 ```
 
 ![Small Example](./Images/Small-Example-Non-Titled.png)
