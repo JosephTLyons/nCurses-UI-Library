@@ -44,7 +44,8 @@ int main()
 
 Of course, our windows do not have to have titles at all.  We can omit them and
 use the extra line as printable space.  All we have to do pass an empty string
-into the `make_new_window()` function and the window will not display a title
+for the window title parameter into the `make_new_window()` function and the
+window will not display a title
 
 ```C++
 ...
