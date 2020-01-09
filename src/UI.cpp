@@ -93,7 +93,6 @@ void UI::print_window_divider (const unsigned int& window_number, const char& di
 {
     if (window_is_valid (window_number))
         window_vector[window_number]->print_divider (divider_symbol);
-
     else
         print_error();
 }
@@ -106,7 +105,6 @@ void UI::write_to_window (const unsigned int& window_number, const std::string& 
 {
     if (window_is_valid (window_number))
         window_vector[window_number]->write (text, newline);
-
     else
         print_error();
 }

@@ -29,7 +29,6 @@ void Window::write_definition (const std::string& text, const bool& newline)
 {
     if (is_center_print_window)
         wprintw (ncurse_text_ptr, get_centered_text (text).c_str());
-
     else
         wprintw (ncurse_text_ptr, text.c_str());
 
@@ -72,11 +71,12 @@ Window::Window (const unsigned int& x, const unsigned int& y,
     // printable space for the text window
     const bool has_window_title = window_title.length() > 0;
 
-    if (has_window_title)
-        ncurse_text_ptr = newwin (height - 3, width - 2, y + 2, x + 1);
+    unsigned int adjustment = 0;
 
-    else
-        ncurse_text_ptr = newwin (height - 2, width - 2, y + 1, x + 1);
+    if (has_window_title)
+        adjustment = 1;
+
+    ncurse_text_ptr = newwin (height - adjustment - 2, width - 2, y + adjustment + 1, x + 1);
 
     scrollok (ncurse_text_ptr, TRUE);
 
