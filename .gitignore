@@ -3,3 +3,4 @@ main.cpp
 makefile
 *.o
 nCurses_UI_Library
+.vscode
